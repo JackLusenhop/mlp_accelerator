@@ -21,10 +21,10 @@ https://www.intel.com/content/www/us/en/docs/programmable/784468/current/program
 and select mvm_noc.sof
 
 To program the software run the folowing commands: 
-'''
+```
 cd mlp_accelerator/sw/app/build/Debug
 niosv-download -g app.elf
-'''
+```
 
 Alternatively, the project can be opened in the RiscFree IDE. 
 
