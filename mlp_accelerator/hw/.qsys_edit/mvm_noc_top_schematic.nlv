@@ -1,0 +1,24 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst mvm_noc_top.DEBUG -pg 1 -lvl 3 -y 90
+preplace inst mvm_noc_top.NIOSV.timer_module -pg 1
+preplace inst mvm_noc_top.NIOSV.dbg_mod -pg 1
+preplace inst mvm_noc_top.clk_0 -pg 1 -lvl 2 -y 260
+preplace inst mvm_noc_top.NIOSV.reset_bridge -pg 1
+preplace inst mvm_noc_top.NIOSV.clock_bridge -pg 1
+preplace inst mvm_noc_top.NIOSV -pg 1 -lvl 1 -y 70
+preplace inst mvm_noc_top -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst mvm_noc_top.mvm_noc_controller_0 -pg 1 -lvl 3 -y 270
+preplace inst mvm_noc_top.SRAM -pg 1 -lvl 3 -y 190
+preplace inst mvm_noc_top.NIOSV.debug_reset_bridge -pg 1
+preplace inst mvm_noc_top.NIOSV.hart -pg 1
+preplace netloc INTERCONNECT<net_container>mvm_noc_top</net_container>(SLAVE)SRAM.s1,(MASTER)NIOSV.instruction_manager,(MASTER)NIOSV.data_manager,(SLAVE)mvm_noc_controller_0.avalon_slave_1,(SLAVE)DEBUG.avalon_jtag_slave,(SLAVE)NIOSV.timer_sw_agent,(SLAVE)NIOSV.dm_agent) 1 0 3 90 210 440 120 760
+preplace netloc FAN_OUT<net_container>mvm_noc_top</net_container>(SLAVE)mvm_noc_controller_0.reset,(SLAVE)clk_0.clk_in_reset,(MASTER)NIOSV.dbg_reset_out) 1 1 2 420 350 NJ
+preplace netloc EXPORT<net_container>mvm_noc_top</net_container>(SLAVE)clk_0.clk_in,(SLAVE)mvm_noc_top.clk) 1 0 2 NJ 270 NJ
+preplace netloc POINT_TO_POINT<net_container>mvm_noc_top</net_container>(SLAVE)DEBUG.irq,(MASTER)NIOSV.platform_irq_rx) 1 1 2 N 140 NJ
+preplace netloc FAN_OUT<net_container>mvm_noc_top</net_container>(SLAVE)NIOSV.clk,(MASTER)clk_0.clk,(SLAVE)DEBUG.clk,(SLAVE)SRAM.clk1,(SLAVE)mvm_noc_controller_0.clk) 1 0 3 90 30 NJ 100 740
+preplace netloc EXPORT<net_container>mvm_noc_top</net_container>(SLAVE)mvm_noc_top.data_out,(SLAVE)mvm_noc_controller_0.data_out) 1 0 3 NJ 330 NJ 330 NJ
+preplace netloc FAN_OUT<net_container>mvm_noc_top</net_container>(SLAVE)SRAM.reset1,(SLAVE)NIOSV.ndm_reset_in,(MASTER)clk_0.clk_reset,(SLAVE)NIOSV.reset,(SLAVE)DEBUG.reset) 1 0 3 110 230 NJ 230 720
+preplace netloc EXPORT<net_container>mvm_noc_top</net_container>(SLAVE)mvm_noc_controller_0.switches,(SLAVE)mvm_noc_top.switches) 1 0 3 NJ 370 NJ 370 NJ
+levelinfo -pg 1 0 60 1010
+levelinfo -hier mvm_noc_top 70 220 550 850 1000

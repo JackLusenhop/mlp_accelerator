@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/de.marw.cmake.cdt.lsp.config.debug.989299613/PATH/delimiter=\:
+environment/project/de.marw.cmake.cdt.lsp.config.debug.989299613/PATH/operation=replace
+environment/project/de.marw.cmake.cdt.lsp.config.debug.989299613/PATH/value=/home/advent2/intelFPGA_lite/23.1std/riscfree/RiscFree/../build_tools/cmake/bin\:/home/advent2/intelFPGA_lite/23.1std/riscfree/RiscFree/../toolchain/riscv32-unknown-elf/bin\:/home/advent2/intelFPGA_lite/23.1std/riscfree/RiscFree/../build_tools/bin\:/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/usr/games\:/usr/local/games\:/snap/bin\:/snap/bin\:/home/advent2/intelFPGA_lite/23.1std/niosv/bin
+environment/project/de.marw.cmake.cdt.lsp.config.debug.989299613/append=true
+environment/project/de.marw.cmake.cdt.lsp.config.debug.989299613/appendContributed=true

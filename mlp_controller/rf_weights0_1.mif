@@ -1,0 +1,10 @@
+WIDTH=128;          -- Data width is 512 bits
+DEPTH=64;           -- Memory depth is 512
+
+ADDRESS_RADIX=HEX;  -- Addresses are in hexadecimal
+DATA_RADIX=HEX;     -- Data is in hexadecimal
+
+CONTENT BEGIN
+    [00..1f] : 01010101010101010101010101010101;
+END;
+
