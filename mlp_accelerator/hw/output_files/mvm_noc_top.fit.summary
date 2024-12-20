@@ -1,0 +1,20 @@
+Fitter Status : Successful - Thu Nov 14 18:15:22 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Standard Edition
+Revision Name : mvm_noc_top
+Top-level Entity Name : mvm_noc_top
+Family : Cyclone V
+Device : 5CSXFC6D6F31C6
+Timing Models : Final
+Logic utilization (in ALMs) : 14,730 / 41,910 ( 35 % )
+Total registers : 24854
+Total pins : 11 / 499 ( 2 % )
+Total virtual pins : 0
+Total block memory bits : 1,450,720 / 5,662,720 ( 26 % )
+Total RAM Blocks : 392 / 553 ( 71 % )
+Total DSP Blocks : 0 / 112 ( 0 % )
+Total HSSI RX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA RX Deserializers : 0 / 9 ( 0 % )
+Total HSSI TX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA TX Serializers : 0 / 9 ( 0 % )
+Total PLLs : 0 / 15 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )
